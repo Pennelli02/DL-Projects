@@ -1,0 +1,1 @@
+Inserire in questa cartella il file scaricato Galaxy10_DECals.h5
