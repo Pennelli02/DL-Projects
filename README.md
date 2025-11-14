@@ -5,4 +5,6 @@
 - **DenseNet**
   - TODO
 - **TensorBoard**
+  - Pytorch_TB: training semplice di minst per testare TensorBoard su pytorch
   - TODO
+    
