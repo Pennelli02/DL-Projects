@@ -1,0 +1,34 @@
+# config.yaml
+# Configurazione per train.py
+
+model: "backbone" # posso scegliere tra handmade e backbone noPreTrained(NoPT)
+augmentation: true
+seed: 569 # per la riproducibilità
+rotation_degrees: [0,180]
+horizontal_flip_probability: 0.5
+vertical_flip_probability: 0.5
+translate_x: 0.10   # Percentuale massima di traslazione sull'asse X (es. 10%)
+translate_y: 0.10   # Percentuale massima di traslazione sull'asse Y (es. 10%)
+Adam: true #se è vero seguo alla lettera l'articolo che usa adam altrimenti più giusto usare adamW
+
+use_morphological_opening: true
+morph_kernel_size: 5
+
+# Valori se non facciamo preTrained
+densenet_num_layers: [6, 12, 24, 16]
+densenet_num_dense_blocks: 4
+densenet_k: 32
+
+batch_size: 64
+weight_decay: 0.0005
+num_epochs: 30
+step_size: 10
+gamma: 0.1
+lr: 0.0001 # non Seguendo l'articolo (0.001)
+
+num_classes: 10
+log_every: 5
+batch_window: 10
+save_every: 5
+checkpoint_dir: 'densenet_ckp'
+
