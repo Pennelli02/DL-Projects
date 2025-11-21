@@ -7,9 +7,11 @@
 - **TensorBoard**
   - Pytorch_TB: training semplice di minst per testare TensorBoard su pytorch
   - TODO
-- **Attention**
-    - TODO<
+- **Image Segmentation**
+  - TODO   
+-  **Attention**
+  - TODO
 - **Transformers**
-   - TODO
+  - TODO
  
 *N.B per questione di tempo i modelli non hanno mai terminato l'addestramento e quindi non si può vedere il risultato finale*
