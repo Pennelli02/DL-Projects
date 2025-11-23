@@ -1,0 +1,5 @@
+scaricare e inderire qui i seguenti file:
+- test-labels.tif
+- test-volume.tif
+- train-labels.tif
+- train-volume.tif
