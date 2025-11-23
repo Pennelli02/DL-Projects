@@ -8,7 +8,8 @@
   - Pytorch_TB: training semplice di minst per testare TensorBoard su pytorch
   - TODO
 - **Image Segmentation**
-  - TODO   
+  - UNetSeg: modello di image segmentation per scan mediche (EM) che segue in modo quasi fedele gli articoli da cui è preso e implementa una UNET (TODO aggiornamento peso con funzione dei bordi)
+  - TODO: OxfordPetIII  
 -  **Attention**
     - TODO
 - **Transformers**
