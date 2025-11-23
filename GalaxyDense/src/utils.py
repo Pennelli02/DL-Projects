@@ -25,10 +25,6 @@ def calculate_class_weights(dataloader, num_classes=10, device='cuda'):
     # Estrai tutte le labels dal dataloader
     all_labels = []
 
-    # ---------------------------------------------------------------------
-    # 🚨 CORREZIONE: 'labels' sono ora Label Encoded (indici interi)
-    # Rimuoviamo torch.argmax(..., dim=1) che causava l'IndexError.
-    # ---------------------------------------------------------------------
     for _, labels in dataloader:
         # Spostiamo il tensore su CPU e convertiamo direttamente in NumPy
         # senza usare argmax, poiché 'labels' contiene già gli indici.
@@ -62,5 +58,6 @@ def calculate_class_weights(dataloader, num_classes=10, device='cuda'):
 
     # Converti in tensor PyTorch
     class_weights_tensor = torch.FloatTensor(class_weights).to(device)
+
 
     return class_weights_tensor
