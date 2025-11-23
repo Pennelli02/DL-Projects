@@ -1,0 +1,21 @@
+dataset: "medical"   # da qui scegli se fare un training su ESM o OXFordPet (pet)
+seed: 123
+train_split: 1 # fedele al paper dato che io non ho la possibilità di richiederlo online
+batch_size: 1 # fedele al paper
+use_weight_map: true
+augmentation: true
+lr: 0.0001     # Learning rate
+num_epochs: 100
+log_every: 10
+save_every: 10
+batch_window: 50
+checkpoint_dir: "checkpoints/unet"
+momentum: 0.99
+
+volume_path: "dataset/train-volume.tif"
+labels_path: "dataset/train-labels.tif"
+
+test_volume_path: "dataset/test-volume.tif"
+test_labels_path: "dataset/test-labels.tif"
+
+use_sgd: true
