@@ -14,5 +14,7 @@
     - TODO
 - **Transformers**
   - TODO
+- **ViT**
+   - TODO
  
 *N.B per questione di tempo i modelli non hanno mai terminato l'addestramento e quindi non si può vedere il risultato finale*
