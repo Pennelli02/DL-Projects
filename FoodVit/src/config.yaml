@@ -1,0 +1,32 @@
+
+model_structure: "backbone" #  qui si sceglie se usare il pretrained o handmade (manual, backbone)
+seed: 123
+# se backbone no pretraining solo fine tuning (troppo costoso fare training)
+
+# Optimizer (SGD per fine-tuning come articolo)
+optimizer: "sgd"
+lr: 0.003 # paper
+momentum: 0.9
+weight_decay: 0.0
+
+early_stop: true # decidiamo se vogliamo l'early stopping
+
+# Scheduler
+scheduler: "cosine"
+num_epochs: 30
+
+# Data
+batch_size: 32
+img_size: 224  # Fine-tuning a risoluzione alta!
+
+# Model
+num_classes: 3
+
+# Training
+log_every: 5
+batch_window: 10
+save_every: 2
+checkpoint_dir: 'ViT_ckp'
+grad_clip: 1.0
+
+dataset_path: "https://github.com/mrdbourke/pytorch-deep-learning/raw/main/data/pizza_steak_sushi.zip"
