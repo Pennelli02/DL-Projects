@@ -15,6 +15,6 @@
 - **Transformers**
   - TODO
 - **ViT**
-   - FoodViT: modello di visual transformer per classificare immagini di cibo, segue in modo quasi fedele gli articoli da cui è stato preso. Presenta 2 versioni di ViT (backbone, No pretrained).
+   - FoodViT: modello di visual transformer per classificare immagini di cibo, segue in modo quasi fedele gli articoli da cui è stato preso. Presenta 2 versioni di ViT (backbone, No pretrained). Aggiunta la funzionalità di *early stopping*
  
 *N.B per questione di tempo i modelli non hanno mai terminato l'addestramento e quindi non si può vedere il risultato finale*
